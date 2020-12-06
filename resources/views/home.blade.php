@@ -50,7 +50,7 @@
                     @endfor
                 </div>
 
-                <input type="submit">
+                <input type="submit" class="btn btn-primary">
                 @csrf
             </form>
         </div>
