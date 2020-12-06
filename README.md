@@ -1,4 +1,4 @@
-#Kullanılanlar
+# Kullanılanlar
 * Laravel (8.x)
 * Google Direction ve GeoLocation Api
 
