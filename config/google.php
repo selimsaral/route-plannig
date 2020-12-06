@@ -1,4 +1,4 @@
 <?php
 return [
-    'API_KEY' => 'AIzaSyDsuZzYHOc5TQ7swgKCXIEJ0YrGgx3yh7s'
+    'API_KEY' => 'AIzaSyA7Gh9nHLJl4xKU0izO79gOIw2q6iw1VyU'
 ];
