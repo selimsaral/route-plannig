@@ -1,5 +1,6 @@
-#Framework
+#Kullanılanlar
 * Laravel (8.x)
+* Google Direction ve GeoLocation Api
 
 # Local Ortamda Ayağa Kaldırma
 * docker-compose up -d
