@@ -1,8 +1,10 @@
 # Kullanılanlar
 * Laravel (8.x)
+* PHP 7.4.3 
 * Google Direction ve GeoLocation Api
 
 # Local Ortamda Ayağa Kaldırma
+* composer install
 * docker-compose up -d
 
 # Kullanım
