@@ -2,7 +2,7 @@
 
 namespace App\Jobs;
 
-use App\Helpers\Direction;
+use App\Helpers\Google\Direction;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -25,13 +25,13 @@ class DirectionJob implements ShouldQueue
         $this->setOrigin();
     }
 
-    public function setOrigin()
+    public function setOrigin(): void
     {
         $this->origin = $this->locations[0];
         unset($this->locations[0]);
     }
 
-    public function handle()
+    public function handle(): array
     {
         $direction = new Direction();
 

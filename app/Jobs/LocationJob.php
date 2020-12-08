@@ -2,7 +2,7 @@
 
 namespace App\Jobs;
 
-use App\Helpers\GeoLocation;
+use App\Helpers\Google\GeoLocation;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -26,12 +26,8 @@ class LocationJob implements ShouldQueue
         $this->address = $address;
     }
 
-    /**
-     * Execute the job.
-     *
-     * @return void
-     */
-    public function handle()
+
+    public function handle(): string
     {
         $geoLocation = new GeoLocation();
 

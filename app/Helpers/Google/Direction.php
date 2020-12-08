@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers;
+namespace App\Helpers\Google;
 
 use Illuminate\Support\Facades\Http;
 
@@ -60,7 +60,7 @@ class Direction
         return $this->response;
     }
 
-    public function getRoutes()
+    public function getRoutes(): array
     {
         $routes = [];
         if ($this->response['status'] == self::STATUS_SUCCESS) {

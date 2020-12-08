@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers;
+namespace App\Helpers\Google;
 
 use Illuminate\Support\Facades\Http;
 
@@ -37,7 +37,7 @@ class GeoLocation
         return $this->response;
     }
 
-    public function getLocation()
+    public function getLocation(): string
     {
         if ($this->response['status'] == self::STATUS_SUCCESS) {
 

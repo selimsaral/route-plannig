@@ -16,7 +16,7 @@ class GetLocations
         return $this;
     }
 
-    public function setAddressList(array $addresses)
+    public function setAddressList(array $addresses): GetLocations
     {
         foreach ($addresses as $address) {
             $this->addresses[] = $address;
